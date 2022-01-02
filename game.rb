@@ -6,15 +6,26 @@ class Game
     @player2 = 3
   end
   def change_turn(turn)
-    # if turn == 1
-    #   @turn = 2
-    # else 
-    #   @turn = 1
-    # end
-    # game_start
+    # change turn first player to another one
+    if turn == 1
+      @turn = 2
+    else 
+      @turn = 1
+    end
+    game_start
   end
+  
   def change_lives(turn)
-
+    # change player lives
+    if turn == 1
+      player1 -= 1
+    else
+      player2 -= 1
+    end
+    # check no lives then game done
+    if player1 == 0 || player2 == 0
+      # game_done
+    end
   end
 
   def game_start
