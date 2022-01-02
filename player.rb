@@ -5,5 +5,3 @@ class Player
     @lives = lives
   end
 end
-p=Player.new
-puts p.name = 'Neema'
