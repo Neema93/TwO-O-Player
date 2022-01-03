@@ -1,3 +1,4 @@
+# game start here 
 class Game
   # set variable 
   attr_accessor :turn, :player1, :player2
@@ -43,7 +44,7 @@ class Game
       game_start
     end
   end
-
+  # game start from here 
   def game_start
     puts "Player 1: #{@player1}/3 lives. Player 2: #{@player2}/3 lives."
     # start the game with question

@@ -23,5 +23,4 @@ class Question
     end
   end
 end
-# q = Question.new(1)
-# q.game_on
+
