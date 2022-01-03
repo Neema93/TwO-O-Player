@@ -14,17 +14,27 @@ class Game
     end
     game_start
   end
-  
+  def game_done
+    if @player1 == 0
+      puts "player2 wins with a score #{@player2}/3"
+    else
+      puts "player1 wins with a score #{@player1}/3"
+    end
+    puts "----GAME OVER----"
+    puts "Good Buy!"
+  end
   def change_lives(turn)
     # change player lives
     if turn == 1
-      player1 -= 1
+      @player1 -= 1
     else
-      player2 -= 1
+      @player2 -= 1
     end
     # check no lives then game done
-    if player1 == 0 || player2 == 0
-      # game_done
+    if @player1 == 0 || @player2 == 0
+      game_done
+    else
+      game_start
     end
   end
 
