@@ -1,10 +1,12 @@
 class Game
+  # set variable 
   attr_accessor :turn, :player1, :player2
   def initialize
     @turn = 1
     @player1 = 3
     @player2 = 3
   end
+  # update turn value 
   def change_turn(turn)
     # change turn first player to another one
     if turn == 1
@@ -12,9 +14,12 @@ class Game
     else 
       @turn = 1
     end
+    # agin send another game
     game_start
   end
+  # method for when game done 
   def game_done
+    # check who done lives 
     if @player1 == 0
       puts "player2 wins with a score #{@player2}/3"
     else
@@ -23,6 +28,7 @@ class Game
     puts "----GAME OVER----"
     puts "Good Buy!"
   end
+  # update lives when player fail 
   def change_lives(turn)
     # change player lives
     if turn == 1
@@ -51,5 +57,3 @@ class Game
     end
   end
 end
-# g=Game.new
-# puts g.game_start
