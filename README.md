@@ -5,20 +5,20 @@ This project play buy two player. Each player have 3 lives. When lives done then
 Game
 Question
 
-## Variables
-  # Game class
+# Variables
+  ## Game class
     turn
     player1
     player2
-  # Question class
+  ## Question class
     turn
     n1
     n2
-## Methods
-  # Game class
+# Methods
+  ## Game class
     game_start
     change_lives
     change_turn
     game_done
-  # Question class
+  ## Question class
     game_on
